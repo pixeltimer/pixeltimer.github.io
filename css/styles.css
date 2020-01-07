@@ -13,7 +13,7 @@ body {
     text-align: center;
     background-position: center;
     background-size: cover;
-    transition-property: backgroundImage;
+    transition-property: backgrond-image;
     transition-duration: 4s;
     height: 100vh;
     color: white;
