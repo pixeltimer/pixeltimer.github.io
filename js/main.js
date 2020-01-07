@@ -126,7 +126,7 @@ function setFocus(e) {
         }
 
     } else {
-        localStorage.setItem('name', e.target.innerText);
+        localStorage.setItem('focus', e.target.innerText);
     }
 }
 
