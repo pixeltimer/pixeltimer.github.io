@@ -62,11 +62,11 @@ function setBgGreet() {
     } else if (hour < 15) {
         //caindo a tarde
         document.body.style.backgroundImage = "url('/imgs/tarde1.gif')";
-        greeting.innerHTML = `Esta caindo a tarde,`
+        greeting.innerHTML = `Vai começar a tarde,`
     } else if (hour < 17) {
         //caindo a tarde 2
         document.body.style.backgroundImage = "url('/imgs/afternoon.gif')";
-        greeting.innerHTML = `Tudo muito calmo,`
+        greeting.innerHTML = `A tarde caiu,`
     } else if (hour < 19) {
         //anoitecendo
         document.body.style.backgroundImage = "url('/imgs/tarde2.gif')";
@@ -84,6 +84,8 @@ function setBgGreet() {
         document.body.style.backgroundImage = "url('/imgs/anoitecendo.gif')";
         greeting.innerHTML = `Ninguém acordado,`
     }
+
+    setTimeout(setBgGreet, 700);
 }
 
 //Pegar o nome
