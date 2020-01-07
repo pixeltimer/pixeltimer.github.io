@@ -86,6 +86,58 @@ function setBgGreet() {
     }
 }
 
+//Pegar o nome
+function getName() {
+    if (localStorage.getItem('name') === null) {
+        name.textContent = '[Insira seu nome]';
+    } else {
+        name.textContent = localStorage.getItem('name');
+    }
+
+}
+
+function setName(e) {
+    if (e.type === 'keypress') {
+        if (e.witch == 13 || e.keyCode == 13) {
+            localStorage.setItem('name', e.target.innerText);
+            name.blur();
+        }
+
+    } else {
+        localStorage.setItem('name', e.target.innerText);
+    }
+}
+
+//Pegar o foco do dia
+function getFocus() {
+    if (localStorage.getItem('focus') === null) {
+        focus.textContent = '[Insira seu foco]';
+    } else {
+        focus.textContent = localStorage.getItem('focus');
+    }
+
+}
+
+function setFocus(e) {
+    if (e.type === 'keypress') {
+        if (e.witch == 13 || e.keyCode == 13) {
+            localStorage.setItem('focus', e.target.innerText);
+            focus.blur();
+        }
+
+    } else {
+        localStorage.setItem('name', e.target.innerText);
+    }
+}
+
+//Captando as teclas
+name.addEventListener('keypress', setName);
+name.addEventListener('blur', setName);
+focus.addEventListener('keypress', setFocus);
+focus.addEventListener('blur', setFocus);
+
 //Rodando
 showTime();
 setBgGreet();
+getName();
+getFocus();
