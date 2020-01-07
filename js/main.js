@@ -126,10 +126,17 @@ function setFocus(e) {
             localStorage.setItem('focus', e.target.innerText);
             focus.blur();
         }
-
     } else {
         localStorage.setItem('focus', e.target.innerText);
     }
+}
+
+function removeTextName() {
+    name.textContent = '⠀';
+}
+
+function removeTextFocus() {
+    focus.textContent = '⠀';
 }
 
 //Captando as teclas
