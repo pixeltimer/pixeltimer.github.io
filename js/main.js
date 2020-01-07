@@ -50,7 +50,7 @@ function setBgGreet() {
         document.getElementById('h2').style = "text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4d68ff, 0 0 40px #4d68ff, 0 0 50px #4d68ff, 0 0 60px #4d68ff, 0 0 70px #4d68ff; opacity: 1;";
         document.getElementById('focus').style = "text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4d68ff, 0 0 40px #4d68ff, 0 0 50px #4d68ff, 0 0 60px #4d68ff, 0 0 70px #4d68ff; opacity: 1;";
         document.getElementById('time').style = "text-shadow: 0 0 20px #fff, 0 0 30px #4dffa6, 0 0 40px #4dffa6, 0 0 50px #4dffa6, 0 0 60px #4dffa6, 0 0 70px #4dffa6, 0 0 80px #4dffa6;";
-        document.body.style.backgroundImage = "url('../imgs/day.gif')";
+        document.body.style.backgroundImage = "url('/imgs/day.gif')";
     } else {
         //noite
         document.body.style.backgroundImage = "url('../imgs/anoitecendo.gif')";
